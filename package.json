@@ -1,0 +1,20 @@
+{
+  "name": "outis_playwrightcucumber",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --publish-quiet",
+    "report": "node reporter.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "chai": "^5.2.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "playwright": "^1.50.1",
+    "prettier": "^3.5.2"
+  }
+}
