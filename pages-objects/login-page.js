@@ -8,4 +8,14 @@ export class LoginPage{
         await page.fill('#password', 'secret_sauce')
         await page.click('#login-button')
     }
+
+    async submitLoginFormWithParameters(username, password){
+        await page.fill('#user-name', username)
+        await page.fill('#password', password)
+        await page.click('#login-button')
+    }
+
+    async pause(){
+        await page.waitForTimeout(3000)
+    }
 }
